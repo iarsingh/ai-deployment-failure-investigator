@@ -52,14 +52,14 @@ These checked-in guides provide the project’s detailed design, operational con
 | --- | --- | --- |
 | `GET /healthz` | `healthz` | [`src/depfail/main.py`](src/depfail/main.py#L10) |
 | `POST /agent/run` | `post_run` | [`src/depfail/main.py`](src/depfail/main.py#L15) |
-| `GET /readyz` | `readyz` | [`src/depfail/ops.py`](src/depfail/ops.py#L44) |
-| `POST /workspaces` | `create_workspace` | [`src/depfail/ops.py`](src/depfail/ops.py#L49) |
-| `GET /workspaces` | `list_workspaces` | [`src/depfail/ops.py`](src/depfail/ops.py#L66) |
-| `POST /workspaces/{workspace_id}/jobs` | `create_job` | [`src/depfail/ops.py`](src/depfail/ops.py#L73) |
-| `GET /jobs/{job_id}` | `get_job` | [`src/depfail/ops.py`](src/depfail/ops.py#L96) |
-| `POST /jobs/{job_id}/approve` | `approve_job` | [`src/depfail/ops.py`](src/depfail/ops.py#L105) |
-| `GET /audit` | `audit` | [`src/depfail/ops.py`](src/depfail/ops.py#L122) |
-| `GET /metrics` | `metrics` | [`src/depfail/ops.py`](src/depfail/ops.py#L138) |
+| `GET /readyz` | `readyz` | [`src/depfail/ops.py`](src/depfail/ops.py#L74) |
+| `POST /workspaces` | `create_workspace` | [`src/depfail/ops.py`](src/depfail/ops.py#L80) |
+| `GET /workspaces` | `list_workspaces` | [`src/depfail/ops.py`](src/depfail/ops.py#L98) |
+| `POST /workspaces/{workspace_id}/jobs` | `create_job` | [`src/depfail/ops.py`](src/depfail/ops.py#L106) |
+| `GET /jobs/{job_id}` | `get_job` | [`src/depfail/ops.py`](src/depfail/ops.py#L130) |
+| `POST /jobs/{job_id}/approve` | `approve_job` | [`src/depfail/ops.py`](src/depfail/ops.py#L140) |
+| `GET /audit` | `audit` | [`src/depfail/ops.py`](src/depfail/ops.py#L160) |
+| `GET /metrics` | `metrics` | [`src/depfail/ops.py`](src/depfail/ops.py#L176) |
 
 The table lists literal route decorators found in the inspected Python modules. Router prefixes and middleware can add behavior; check the linked handler and application setup before calling an endpoint.
 
